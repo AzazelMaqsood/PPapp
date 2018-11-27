@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.LoginTxtBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.PassTxtBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
             // LoginTxtBox
@@ -71,7 +73,7 @@
             // 
             this.materialCheckBox1.AutoSize = true;
             this.materialCheckBox1.Depth = 0;
-            this.materialCheckBox1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.materialCheckBox1.Font = new System.Drawing.Font("Roboto", 10F);
             this.materialCheckBox1.Location = new System.Drawing.Point(47, 232);
             this.materialCheckBox1.Margin = new System.Windows.Forms.Padding(0);
             this.materialCheckBox1.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -107,10 +109,15 @@
             this.materialDivider1.TabIndex = 4;
             this.materialDivider1.Text = "materialDivider1";
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // Auth
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(431, 307);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.materialRaisedButton1);
@@ -119,7 +126,7 @@
             this.Controls.Add(this.LoginTxtBox);
             this.Name = "Auth";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Авторизация";
+            this.Text = "                                   Авторизация";
             this.TransparencyKey = System.Drawing.SystemColors.Info;
             this.Load += new System.EventHandler(this.Auth_Load);
             this.ResumeLayout(false);
@@ -134,6 +141,7 @@
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 

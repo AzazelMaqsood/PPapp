@@ -73,6 +73,166 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _248917 {
+            get {
+                object obj = ResourceManager.GetObject("248917", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_101254 {
+            get {
+                object obj = ResourceManager.GetObject("download_101254", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download_422593 {
+            get {
+                object obj = ResourceManager.GetObject("download_422593", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap horizontal_line1600 {
+            get {
+                object obj = ResourceManager.GetObject("horizontal_line1600", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap horizontal_line16001 {
+            get {
+                object obj = ResourceManager.GetObject("horizontal_line16001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icone_superficie_vert {
+            get {
+                object obj = ResourceManager.GetObject("icone-superficie-vert", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_расширить_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-расширить-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_расширить_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-расширить-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_удалить_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-удалить-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_удалить_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-удалить-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_удалить_502 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-удалить-502", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_удалить_503 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-удалить-503", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_удалить_504 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-удалить-504", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_удалить_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-удалить-filled-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_32988 {
+            get {
+                object obj = ResourceManager.GetObject("img_32988", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap img_329881 {
+            get {
+                object obj = ResourceManager.GetObject("img_329881", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loader {
             get {
                 object obj = ResourceManager.GetObject("loader", resourceCulture);
@@ -93,6 +253,16 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Menu_512 {
+            get {
+                object obj = ResourceManager.GetObject("Menu-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Omslag_Plan_B_300x300 {
             get {
                 object obj = ResourceManager.GetObject("Omslag-Plan-B-300x300", resourceCulture);
@@ -106,6 +276,46 @@ namespace Plan_B_Administration.Properties {
         internal static System.Drawing.Bitmap plan_b_printing_logo {
             get {
                 object obj = ResourceManager.GetObject("plan-b-printing-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plan_b_printing_logo_копия {
+            get {
+                object obj = ResourceManager.GetObject("plan-b-printing-logo копия", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plan_b_printing_logo1 {
+            get {
+                object obj = ResourceManager.GetObject("plan-b-printing-logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plan_b_printing_logo11 {
+            get {
+                object obj = ResourceManager.GetObject("plan-b-printing-logo11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plan_b_printing_logo2 {
+            get {
+                object obj = ResourceManager.GetObject("plan-b-printing-logo2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Animator, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Animator.1.0.3\lib\net20\Animator.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\Bunifu\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
@@ -58,10 +61,19 @@
     <Compile Include="Auth.Designer.cs">
       <DependentUpon>Auth.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Auth.resx">
       <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +119,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\0039074_0.Png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_101254.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_32988.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_329881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-расширить-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone-superficie-vert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-расширить-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-504.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-удалить-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_line1600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_line16001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-b-printing-logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-b-printing-logo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-b-printing-logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-b-printing-logo копия.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\248917.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_422593.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
