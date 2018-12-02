@@ -17,6 +17,8 @@ namespace Plan_B_Administration
             InitializeComponent();
         }
 
+        int poss = 10;
+
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
 
@@ -24,7 +26,7 @@ namespace Plan_B_Administration
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-
+            todoCard.Visible = true;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -45,6 +47,36 @@ namespace Plan_B_Administration
                 PanelAnimator.ShowSync(sidemenu);
                 //btnMenu.Location = new Point(17, 18);
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void addItem(string Text,string Key, bool Checked)
+        {
+            todo_item item = new todo_item(Text, Key, Checked);
+            todoPanel.Controls.Add(item);
+            item.onChange += Item_onChange;
+            item.onDelete += Item_onDelete;
+            item.Top = poss;
+            poss = (item.Top+item.Height+10);
+        }
+
+        private void Item_onDelete(object sender, EventArgs e)
+        {
+            MessageBox.Show("Задача успешно удалена");
+        }
+
+        private void Item_onChange(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        {
+            addItem("Item Test", "0", false);
         }
     }
 }

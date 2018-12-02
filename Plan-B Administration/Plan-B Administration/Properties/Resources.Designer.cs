@@ -83,6 +83,16 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_50px {
+            get {
+                object obj = ResourceManager.GetObject("Add_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download_101254 {
             get {
                 object obj = ResourceManager.GetObject("download_101254", resourceCulture);
@@ -336,6 +346,16 @@ namespace Plan_B_Administration.Properties {
         internal static System.Drawing.Bitmap unnamed1 {
             get {
                 object obj = ResourceManager.GetObject("unnamed1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Waste_48px {
+            get {
+                object obj = ResourceManager.GetObject("Waste_48px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
