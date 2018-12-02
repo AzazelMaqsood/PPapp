@@ -16,7 +16,7 @@ namespace Plan_B_Administration
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Auth());
         }
     }
 }

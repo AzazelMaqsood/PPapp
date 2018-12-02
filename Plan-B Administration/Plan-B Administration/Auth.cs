@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using BCrypt.Net;
+using Bcrypt = BCrypt.Net.BCrypt;
+using System.Windows.Forms;
 
 namespace Plan_B_Administration
 {
@@ -24,6 +28,27 @@ namespace Plan_B_Administration
         private void Auth_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=MAHNO;Initial Catalog=PlanBadmin;" + "Integrated Security=true;");
+            string CPass = Bcrypt.HashPassword(txtPassword.Text, "$2a$11$fhmmGItQBp5ncDeCSnDPG/");
+            string query = "Select * from Admin Where Login ='" + txtUsername.Text.Trim() + "' and Password = '" + CPass.Remove(50, 10) + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
+            DataTable dtbl = new DataTable();
+            sda.Fill(dtbl);
+            if (dtbl.Rows.Count == 1)
+            {
+                Main main = new Main();
+                this.Hide();
+                main.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Перепроверьте введеный вами логин и пароль");
+            }
         }
     }
 }

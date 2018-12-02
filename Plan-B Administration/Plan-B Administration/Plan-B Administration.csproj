@@ -35,6 +35,9 @@
     <Reference Include="Animator, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Animator.1.0.3\lib\net20\Animator.dll</HintPath>
     </Reference>
+    <Reference Include="BCrypt.Net-Next, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.3.1.0\lib\net452\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\..\..\Bunifu\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>

@@ -29,45 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.LoginTxtBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.PassTxtBox = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtUsername = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtPassword = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialCheckBox1 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.SuspendLayout();
             // 
-            // LoginTxtBox
+            // txtUsername
             // 
-            this.LoginTxtBox.Depth = 0;
-            this.LoginTxtBox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginTxtBox.Hint = "Введите логин";
-            this.LoginTxtBox.Location = new System.Drawing.Point(47, 112);
-            this.LoginTxtBox.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LoginTxtBox.Name = "LoginTxtBox";
-            this.LoginTxtBox.PasswordChar = '\0';
-            this.LoginTxtBox.SelectedText = "";
-            this.LoginTxtBox.SelectionLength = 0;
-            this.LoginTxtBox.SelectionStart = 0;
-            this.LoginTxtBox.Size = new System.Drawing.Size(342, 28);
-            this.LoginTxtBox.TabIndex = 0;
-            this.LoginTxtBox.UseSystemPasswordChar = false;
+            this.txtUsername.Depth = 0;
+            this.txtUsername.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtUsername.Hint = "Введите логин";
+            this.txtUsername.Location = new System.Drawing.Point(47, 112);
+            this.txtUsername.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.SelectionLength = 0;
+            this.txtUsername.SelectionStart = 0;
+            this.txtUsername.Size = new System.Drawing.Size(342, 28);
+            this.txtUsername.TabIndex = 0;
+            this.txtUsername.UseSystemPasswordChar = false;
             // 
-            // PassTxtBox
+            // txtPassword
             // 
-            this.PassTxtBox.Depth = 0;
-            this.PassTxtBox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PassTxtBox.Hint = "Введите пароль";
-            this.PassTxtBox.Location = new System.Drawing.Point(47, 172);
-            this.PassTxtBox.MouseState = MaterialSkin.MouseState.HOVER;
-            this.PassTxtBox.Name = "PassTxtBox";
-            this.PassTxtBox.PasswordChar = '*';
-            this.PassTxtBox.SelectedText = "";
-            this.PassTxtBox.SelectionLength = 0;
-            this.PassTxtBox.SelectionStart = 0;
-            this.PassTxtBox.Size = new System.Drawing.Size(342, 28);
-            this.PassTxtBox.TabIndex = 1;
-            this.PassTxtBox.UseSystemPasswordChar = false;
+            this.txtPassword.Depth = 0;
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtPassword.Hint = "Введите пароль";
+            this.txtPassword.Location = new System.Drawing.Point(47, 172);
+            this.txtPassword.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.SelectionLength = 0;
+            this.txtPassword.SelectionStart = 0;
+            this.txtPassword.Size = new System.Drawing.Size(342, 28);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = false;
             // 
             // materialCheckBox1
             // 
@@ -85,18 +85,19 @@
             this.materialCheckBox1.Text = "Запомнить меня";
             this.materialCheckBox1.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton1
+            // btnLogin
             // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Font = new System.Drawing.Font("HelvLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialRaisedButton1.Location = new System.Drawing.Point(232, 232);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(157, 30);
-            this.materialRaisedButton1.TabIndex = 3;
-            this.materialRaisedButton1.Text = "Войти";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.btnLogin.Depth = 0;
+            this.btnLogin.Font = new System.Drawing.Font("HelvLight", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(232, 232);
+            this.btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Primary = true;
+            this.btnLogin.Size = new System.Drawing.Size(157, 30);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Войти";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // materialDivider1
             // 
@@ -122,10 +123,10 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(431, 307);
             this.Controls.Add(this.materialDivider1);
-            this.Controls.Add(this.materialRaisedButton1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.materialCheckBox1);
-            this.Controls.Add(this.PassTxtBox);
-            this.Controls.Add(this.LoginTxtBox);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Name = "Auth";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "                                   Авторизация";
@@ -138,10 +139,10 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialSingleLineTextField LoginTxtBox;
-        private MaterialSkin.Controls.MaterialSingleLineTextField PassTxtBox;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtUsername;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtPassword;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckBox1;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnLogin;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
