@@ -78,5 +78,10 @@ namespace Plan_B_Administration
         {
             addItem("Item Test", "0", false);
         }
+
+        private void btnSotr_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

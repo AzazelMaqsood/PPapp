@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using BCrypt.Net;
 using Bcrypt = BCrypt.Net.BCrypt;
-using System.Windows.Forms;
+
 
 namespace Plan_B_Administration
 {

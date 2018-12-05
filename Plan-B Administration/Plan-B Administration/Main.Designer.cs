@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            AnimatorNS.Animation animation2 = new AnimatorNS.Animation();
-            AnimatorNS.Animation animation1 = new AnimatorNS.Animation();
+            AnimatorNS.Animation animation4 = new AnimatorNS.Animation();
+            AnimatorNS.Animation animation3 = new AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.sidemenu = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.LogoAnimator1 = new AnimatorNS.Animator(this.components);
             this.PanelAnimator = new AnimatorNS.Animator(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.todoCard = new Bunifu.Framework.UI.BunifuCards();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.todoPanel = new System.Windows.Forms.Panel();
+            this.todoCard = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.LogoFull = new System.Windows.Forms.PictureBox();
             this.btnAbout = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -55,19 +55,17 @@
             this.btnMain = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton4 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sidemenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.todoCard.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.todoCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoFull)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -99,7 +97,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
             this.panel2.Controls.Add(this.bunifuImageButton4);
-            this.panel2.Controls.Add(this.bunifuImageButton3);
             this.panel2.Controls.Add(this.bunifuImageButton2);
             this.panel2.Controls.Add(this.bunifuCustomLabel1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -124,58 +121,47 @@
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Plan-B Administration";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.todoCard);
-            this.PanelAnimator.SetDecoration(this.panel3, AnimatorNS.DecorationType.None);
-            this.LogoAnimator1.SetDecoration(this.panel3, AnimatorNS.DecorationType.None);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(300, 48);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(849, 652);
-            this.panel3.TabIndex = 2;
-            // 
             // LogoAnimator1
             // 
             this.LogoAnimator1.AnimationType = AnimatorNS.AnimationType.ScaleAndRotate;
             this.LogoAnimator1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(30);
-            animation2.RotateCoeff = 0.5F;
-            animation2.RotateLimit = 0.2F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.LogoAnimator1.DefaultAnimation = animation2;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(30);
+            animation4.RotateCoeff = 0.5F;
+            animation4.RotateLimit = 0.2F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.LogoAnimator1.DefaultAnimation = animation4;
             // 
             // PanelAnimator
             // 
             this.PanelAnimator.AnimationType = AnimatorNS.AnimationType.Particles;
             this.PanelAnimator.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
-            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
-            this.PanelAnimator.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 1;
+            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 2F;
+            animation3.TransparencyCoeff = 0F;
+            this.PanelAnimator.DefaultAnimation = animation3;
             // 
             // bunifuDragControl1
             // 
@@ -191,27 +177,16 @@
             this.bunifuDragControl2.TargetControl = null;
             this.bunifuDragControl2.Vertical = true;
             // 
-            // todoCard
+            // panel3
             // 
-            this.todoCard.BackColor = System.Drawing.Color.White;
-            this.todoCard.BorderRadius = 5;
-            this.todoCard.BottomSahddow = true;
-            this.todoCard.color = System.Drawing.Color.White;
-            this.todoCard.Controls.Add(this.todoPanel);
-            this.todoCard.Controls.Add(this.bunifuMaterialTextbox1);
-            this.todoCard.Controls.Add(this.bunifuImageButton1);
-            this.todoCard.Controls.Add(this.panel1);
-            this.PanelAnimator.SetDecoration(this.todoCard, AnimatorNS.DecorationType.None);
-            this.LogoAnimator1.SetDecoration(this.todoCard, AnimatorNS.DecorationType.None);
-            this.todoCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.todoCard.LeftSahddow = false;
-            this.todoCard.Location = new System.Drawing.Point(0, 0);
-            this.todoCard.Name = "todoCard";
-            this.todoCard.RightSahddow = true;
-            this.todoCard.ShadowDepth = 20;
-            this.todoCard.Size = new System.Drawing.Size(849, 652);
-            this.todoCard.TabIndex = 0;
-            this.todoCard.Visible = false;
+            this.panel3.Controls.Add(this.todoCard);
+            this.PanelAnimator.SetDecoration(this.panel3, AnimatorNS.DecorationType.None);
+            this.LogoAnimator1.SetDecoration(this.panel3, AnimatorNS.DecorationType.None);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(300, 48);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(849, 652);
+            this.panel3.TabIndex = 2;
             // 
             // panel1
             // 
@@ -270,6 +245,28 @@
             this.todoPanel.Name = "todoPanel";
             this.todoPanel.Size = new System.Drawing.Size(488, 443);
             this.todoPanel.TabIndex = 4;
+            // 
+            // todoCard
+            // 
+            this.todoCard.BackColor = System.Drawing.Color.White;
+            this.todoCard.BorderRadius = 5;
+            this.todoCard.BottomSahddow = true;
+            this.todoCard.color = System.Drawing.Color.White;
+            this.todoCard.Controls.Add(this.todoPanel);
+            this.todoCard.Controls.Add(this.bunifuMaterialTextbox1);
+            this.todoCard.Controls.Add(this.bunifuImageButton1);
+            this.todoCard.Controls.Add(this.panel1);
+            this.PanelAnimator.SetDecoration(this.todoCard, AnimatorNS.DecorationType.None);
+            this.LogoAnimator1.SetDecoration(this.todoCard, AnimatorNS.DecorationType.None);
+            this.todoCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.todoCard.LeftSahddow = false;
+            this.todoCard.Location = new System.Drawing.Point(0, 0);
+            this.todoCard.Name = "todoCard";
+            this.todoCard.RightSahddow = true;
+            this.todoCard.ShadowDepth = 20;
+            this.todoCard.Size = new System.Drawing.Size(849, 652);
+            this.todoCard.TabIndex = 0;
+            this.todoCard.Visible = false;
             // 
             // bunifuImageButton1
             // 
@@ -447,6 +444,7 @@
             this.btnSotr.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSotr.Textcolor = System.Drawing.Color.White;
             this.btnSotr.TextFont = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSotr.Click += new System.EventHandler(this.btnSotr_Click);
             // 
             // btnMain
             // 
@@ -510,28 +508,13 @@
             this.LogoAnimator1.SetDecoration(this.bunifuImageButton4, AnimatorNS.DecorationType.None);
             this.bunifuImageButton4.Image = global::Plan_B_Administration.Properties.Resources.horizontal_line16001;
             this.bunifuImageButton4.ImageActive = null;
-            this.bunifuImageButton4.Location = new System.Drawing.Point(1050, 20);
+            this.bunifuImageButton4.Location = new System.Drawing.Point(1081, 20);
             this.bunifuImageButton4.Name = "bunifuImageButton4";
             this.bunifuImageButton4.Size = new System.Drawing.Size(25, 25);
             this.bunifuImageButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton4.TabIndex = 5;
             this.bunifuImageButton4.TabStop = false;
             this.bunifuImageButton4.Zoom = 10;
-            // 
-            // bunifuImageButton3
-            // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
-            this.PanelAnimator.SetDecoration(this.bunifuImageButton3, AnimatorNS.DecorationType.None);
-            this.LogoAnimator1.SetDecoration(this.bunifuImageButton3, AnimatorNS.DecorationType.None);
-            this.bunifuImageButton3.Image = global::Plan_B_Administration.Properties.Resources.icons8_расширить_501;
-            this.bunifuImageButton3.ImageActive = null;
-            this.bunifuImageButton3.Location = new System.Drawing.Point(1081, 11);
-            this.bunifuImageButton3.Name = "bunifuImageButton3";
-            this.bunifuImageButton3.Size = new System.Drawing.Size(25, 25);
-            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton3.TabIndex = 4;
-            this.bunifuImageButton3.TabStop = false;
-            this.bunifuImageButton3.Zoom = 10;
             // 
             // bunifuImageButton2
             // 
@@ -579,14 +562,13 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.todoCard.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.todoCard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoFull)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -603,23 +585,22 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnMain;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton4;
         private Bunifu.Framework.UI.BunifuFlatButton btnTasks;
         private Bunifu.Framework.UI.BunifuFlatButton btnSotr;
         private Bunifu.Framework.UI.BunifuFlatButton btnAbout;
         private Bunifu.Framework.UI.BunifuFlatButton btnTodo;
         private System.Windows.Forms.PictureBox LogoFull;
-        private System.Windows.Forms.Panel panel3;
         private AnimatorNS.Animator PanelAnimator;
         private AnimatorNS.Animator LogoAnimator1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private System.Windows.Forms.Panel panel3;
         private Bunifu.Framework.UI.BunifuCards todoCard;
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private System.Windows.Forms.Panel todoPanel;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
-        private System.Windows.Forms.Panel todoPanel;
+        private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
     }
 }
