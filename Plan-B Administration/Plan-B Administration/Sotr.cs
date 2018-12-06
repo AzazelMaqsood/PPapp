@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net;
+using System.Net.Mail;
 
 namespace Plan_B_Administration
 {
@@ -17,6 +19,7 @@ namespace Plan_B_Administration
         int Id_sotr = 0;
         System.Data.DataTable dtbl = new System.Data.DataTable();
 
+        public static string file;
         public Sotr()
         {
             InitializeComponent();
@@ -34,7 +37,7 @@ namespace Plan_B_Administration
                     SqlCommand sqlCmd = new SqlCommand("SotrAdd", con);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@mode", "Add");
-                    sqlCmd.Parameters.AddWithValue("@Id_sotr", txtId.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@Id_sotr", 0);
                     sqlCmd.Parameters.AddWithValue("@I_sotr", txtName.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@F_sotr", txtFam.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@O_sotr", txtOtch.Text.Trim());
@@ -65,7 +68,7 @@ namespace Plan_B_Administration
 
                 }
 
-               
+
                 UpdateDTBL();
 
             }
@@ -81,6 +84,8 @@ namespace Plan_B_Administration
                 con.Close();
             }
         }
+
+
 
         void FillDataGridView()
         {
@@ -112,7 +117,7 @@ namespace Plan_B_Administration
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 if (txtSearch.Text == "")
@@ -135,7 +140,7 @@ namespace Plan_B_Administration
                 }
 
                 FillDataGridView();
-                
+
 
             }
 
@@ -143,6 +148,113 @@ namespace Plan_B_Administration
             {
                 MessageBox.Show(ex.Message, "Ошибка при поиске");
             }
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            this.Hide();
+        }
+
+        private void Sotr_Load(object sender, EventArgs e)
+        {
+         
+            this.sotrTableAdapter.Fill(this.planBadminDataSet.Sotr);
+
+        }
+
+        private void dgvSotr_DoubleClick(object sender, EventArgs e)
+        {
+            //if (dgvSotr.CurrentRow.Index != -1)
+            //{
+                //Id_sotr = Convert.ToInt32(dgvSotr.CurrentRow.Cells[0].Value.ToString());
+                //txtName.Text = dgvSotr.CurrentRow.Cells[1].Value.ToString();
+                //txtName.Text = dgvSotr.CurrentRow.Cells[2].Value.ToString();
+                //txtFam.Text = dgvSotr.CurrentRow.Cells[3].Value.ToString();
+                //txtOtch.Text = dgvSotr.CurrentRow.Cells[4].Value.ToString();
+                //txtEmail.Text = dgvSotr.CurrentRow.Cells[5].Value.ToString();
+                //btnAdd.Text = "Обновить";
+                //btnDel.Enabled = true;
+            //}
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+
+                SqlCommand sqlCmd = new SqlCommand("SotrDel", con);
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+                sqlCmd.Parameters.AddWithValue("@Id_sotr", Id_sotr);
+                sqlCmd.ExecuteNonQuery();
+
+                MessageBox.Show("Сотрудник успешно удален");
+
+                UpdateDTBL();
+
+
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка при удалении");
+            }
+        }
+
+        private void txtSearch_Click(object sender, EventArgs e)
+        {
+            txtSearch.Clear();
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fo = new OpenFileDialog();
+            fo.ShowDialog();
+            file = fo.FileName;
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            string email = "poluchupoluchu@gmail.com";
+            string emailto = txtEmail.Text;
+            string password = "Petkoglo99";
+            string text = txtOpis.Text;
+            string title = txtTittle.Text;
+            string smtp = "smtp.gmail.com";
+
+            NetworkCredential loginInfo = new NetworkCredential(email, password);
+            MailMessage msg = new MailMessage();
+            SmtpClient smtpClient = new SmtpClient(smtp, 587);
+            msg.From = new MailAddress(email);
+            msg.To.Add(new MailAddress(emailto));
+            msg.Subject = title;
+            msg.Body = text.ToString();
+
+            smtpClient.EnableSsl = true;
+            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Credentials = loginInfo;
+            smtpClient.Send(msg);
+
+
+
+        }
+
+        private void txtTittle_Click(object sender, EventArgs e)
+        {
+            txtTittle.Clear();
+        }
+
+        private void txtOpis_Click(object sender, EventArgs e)
+        {
+            txtOpis.Clear();
+        }
+
+        private void dgvSotr_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

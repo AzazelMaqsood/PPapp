@@ -21,12 +21,14 @@ namespace Plan_B_Administration
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-
+            todoCard.Visible = false;
+            logomain.Visible = true;
         }
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             todoCard.Visible = true;
+            logomain.Visible = false;
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -76,12 +78,26 @@ namespace Plan_B_Administration
 
         private void bunifuImageButton1_Click_1(object sender, EventArgs e)
         {
-            addItem("Item Test", "0", false);
+            addItem(txtTaskName.Text, "0", false);
         }
 
         private void btnSotr_Click(object sender, EventArgs e)
         {
-            
+            Sotr sotr = new Sotr();
+            sotr.Show();
+            this.Hide();
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.Show();
+            this.Hide();
         }
     }
 }

@@ -143,6 +143,26 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_go_back_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-go-back-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_go_back_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-go-back-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_расширить_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-расширить-50", resourceCulture);
@@ -263,6 +283,16 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ls_jpg {
+            get {
+                object obj = ResourceManager.GetObject("ls.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menu_512 {
             get {
                 object obj = ResourceManager.GetObject("Menu-512", resourceCulture);
@@ -286,6 +316,16 @@ namespace Plan_B_Administration.Properties {
         internal static System.Drawing.Bitmap Plan_B_logo_black {
             get {
                 object obj = ResourceManager.GetObject("Plan-B-logo-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Plan_B_logo_black1 {
+            get {
+                object obj = ResourceManager.GetObject("Plan-B-logo-black1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +386,16 @@ namespace Plan_B_Administration.Properties {
         internal static System.Drawing.Bitmap plan_b_printing_logo2 {
             get {
                 object obj = ResourceManager.GetObject("plan-b-printing-logo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Undo_10px {
+            get {
+                object obj = ResourceManager.GetObject("Undo_10px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
