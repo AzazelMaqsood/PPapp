@@ -78,6 +78,12 @@
     <Compile Include="Sotr.Designer.cs">
       <DependentUpon>Sotr.cs</DependentUpon>
     </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="Sotr.resx">
       <DependentUpon>Sotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
@@ -209,6 +218,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Add_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plan-B-logo-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-b-printing-logo12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

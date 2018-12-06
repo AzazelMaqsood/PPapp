@@ -283,6 +283,16 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Plan_B_logo_black {
+            get {
+                object obj = ResourceManager.GetObject("Plan-B-logo-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plan_b_printing_logo {
             get {
                 object obj = ResourceManager.GetObject("plan-b-printing-logo", resourceCulture);
@@ -323,6 +333,16 @@ namespace Plan_B_Administration.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plan_b_printing_logo12 {
+            get {
+                object obj = ResourceManager.GetObject("plan-b-printing-logo12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plan_b_printing_logo2 {
             get {
                 object obj = ResourceManager.GetObject("plan-b-printing-logo2", resourceCulture);
@@ -346,6 +366,16 @@ namespace Plan_B_Administration.Properties {
         internal static System.Drawing.Bitmap unnamed1 {
             get {
                 object obj = ResourceManager.GetObject("unnamed1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed2 {
+            get {
+                object obj = ResourceManager.GetObject("unnamed2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

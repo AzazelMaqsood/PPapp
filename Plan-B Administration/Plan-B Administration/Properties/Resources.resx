@@ -133,14 +133,20 @@
   <data name="plan-b-printing-logo11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plan-b-printing-logo11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icone-superficie-vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icone-superficie-vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download_422593" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download_422593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-расширить-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-расширить-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Plan-B-logo-black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plan-B-logo-black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plan-b-printing-logo12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plan-b-printing-logo12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-superficie-vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icone-superficie-vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loader1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loader1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,9 +166,6 @@
   <data name="icons8-удалить-filled-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-удалить-filled-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Waste_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Waste_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="plan-b-printing-logo копия" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plan-b-printing-logo копия.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +177,9 @@
   </data>
   <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-расширить-501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-расширить-501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,6 +196,9 @@
   <data name="icons8-удалить-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-удалить-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-расширить-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-расширить-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="img_32988" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_32988.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -205,7 +214,7 @@
   <data name="icons8-удалить-501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-удалить-501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Add_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Add_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unnamed2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
